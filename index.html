@@ -16,6 +16,16 @@
   </head>
   <body>
     <h1> FORM CREATION</h1>
+    <script>
+      function cancel()
+      {
+        document.write ="ARE U SURE TO LEAVE THIS PAGE";
+      }
+      function ok()
+      {
+        document.write ="THANK U";
+      }
+    </script>
     <form>
       <label> NAME</label>
       <input type="text">
@@ -37,10 +47,10 @@
       <input type="checkbox"> JAVA
       <br> 
       <br>
-      <input type ="ok" value ="submit">
+      <button onclick ="ok()">submit</button>
       <br>
       <br>
-      <input type ="back" value ="cancel">
+      <button onclick= "cancel()">cancel</button>
       <br>
       <br>
     </form>
